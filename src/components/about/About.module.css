@@ -1,5 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Poppins:ital,wght@1,200&family=Shadows+Into+Light&display=swap");
+
 .aboutContainer {
-  justify-content: center;
+  margin-left: 100px;
+  background: #252627;
   display: flex;
-  align-items: center;
+  margin-top: 100px;
+  position: absolute;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+}
+.aboutIntroSection {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  font-family: "Poppins", sans-serif !important;
+  padding-left: 100px;
+  width: 600px;
+  height: 100vh;
+  justify-content: center;
+}
+.aboutBodySpan {
+  color: #42474b;
+  opacity: 0.7;
+  display: flex;
+  cursor: default;
+  user-select: none;
+  position: relative;
+  left: -25px;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+}
+.aboutH1AndPSpan {
+  color: #42474b;
+  opacity: 0.7;
+  display: flex;
+  cursor: default;
+  user-select: none;
+  position: relative;
+  padding: 5px 0 5px 5px;
+  font-size: 16px;
+}
+.aboutParagraph {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  left: 15px;
+  user-select: none;
+}
+.aboutPSpanInner {
+  color: #42474b;
+  opacity: 0.7;
+  display: flex;
+  cursor: default;
+  user-select: none;
+  position: relative;
+  padding: 5px;
+  padding-left: 0;
+  font-size: 16px;
+}
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.iconContainer i {
+  font-size: 30px;
+  padding-right: 100px;
+  padding-left: 15px;
+  color: #00ffff;
+  cursor: pointer;
+}
+.certificateButtonContainer {
+  width: 45%;
+  float: right;
+  justify-content: right !important;
+  align-items: flex-end !important;
+  /* padding-left: 95% !important; */
+  /* position: absolute; */
+  /* margin-left: 70%; */
+  margin-top: 20%;
+  margin-left: 50px;
+  padding-left: 300px;
+}
+.certificateButton {
+  margin-top: 25px !important;
+  width: 150px;
+  border: 2px solid #00ffff !important;
+  border-radius: 5px;
+  background: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  padding: 8px;
+  color: #00ffff;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  position: relative;
 }
