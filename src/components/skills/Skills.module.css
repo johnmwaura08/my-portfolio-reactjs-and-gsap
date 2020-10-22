@@ -1,5 +1,124 @@
 .skillsContainer {
-	justify-content: center;
-	display: flex;
-	align-items: center;
+  margin-left: 100px;
+  background: #252627;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+}
+.introSkillsSection {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  font-family: "Poppins", sans-serif !important;
+  padding-left: 100px;
+  width: 600px;
+  /* height: 700px; */
+  min-height: 100vh;
+  justify-content: center;
+}
+.skillsBodySpan {
+  color: #42474b;
+  opacity: 0.7;
+  display: flex;
+  cursor: default;
+  user-select: none;
+  position: relative;
+  left: -15px;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+}
+.skillsPSpan {
+  color: #42474b;
+  opacity: 0.7;
+  display: flex;
+  cursor: default;
+  user-select: none;
+  position: relative;
+  padding: 5px 0 5px 0;
+  font-size: 16px;
+}
+.skillsParagraph {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px;
+  position: relative;
+  left: 15px;
+  user-select: none;
+}
+.skillsWrap {
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  position: relative;
+  left: 7%;
+  margin-top: 20%;
+  margin-left: 50px;
+  padding-left: 200px;
+}
+.skillsCube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+}
+.cubeElement {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #00ffff;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 30px;
+  text-align: center;
+}
+.cubeFront {
+  transform: translateZ(100px);
+}
+.cubeTop {
+  transform: rotateX(90deg) translateY(-100px);
+  transform-origin: top center;
+}
+.cubeBottom {
+  transform: rotateX(-90deg) translateY(100px);
+  transform-origin: bottom center;
+}
+.cubeLeft {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+}
+.cubeRight {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+}
+
+@media (max-width: 700px) {
+  .skillsContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+	margin-top: 50px;
+	margin-left: 5px;
+	width: 100vw;
+  }
+  .introSkillsSection{
+	  padding-left: 5ppx;
+  }
+  .skillsParagraph {
+	  font-size: 10px;
+	  left: 5px;
+  }
+  .skillsWrap {
+	  justify-content: center;
+	  padding-left: 50px;
+	  perspective: 980px;
+	  display: none;
+  }
+  .skillsCube {
+	  width: 5px;
+	  height: 5px;
+	  position: absolute;
+  }
 }
