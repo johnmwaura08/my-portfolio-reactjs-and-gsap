@@ -14,13 +14,13 @@
   margin: 10px; */
 }
 .navContainer {
- display: flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
 .navContainer i {
-padding: 15px;
+  padding: 15px;
   cursor: pointer;
   color: #42474b;
   display: flex;
@@ -32,34 +32,32 @@ padding: 15px;
 }
 
 .navContainer p {
- position: absolute;
+  position: absolute;
   top: 16px;
   opacity: 0;
-  font-family: 'Shadows Into Light', cursive !important;
+  font-family: "Shadows Into Light", cursive !important;
   font-size: 16px;
-
 }
 
- @media only screen and (max-width: 1000px){
-	 .container {
-		 position: absolute;
-		 flex-direction: row;
-		 height: 40px;
-		 width: 100%;
-	 }
-	 .navContainer {
-		 /* position: relative; */
-		 position: absolute;
-		 flex-direction: row;
-		 height: 40px;
-     width: 100%;
-     justify-content: center;
-     align-items: center;
-   }
-   .navContainer i {
+@media only screen and (max-width: 1000px) {
+  .container {
+    position: absolute;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+  }
+  .navContainer {
+    /* position: relative; */
+    position: absolute;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navContainer i {
     margin: 1px;
-     color: #00ffff;
-     margin-bottom: 5px;
-   }
- }
- 
+    color: #00ffff;
+    margin-bottom: 5px;
+  }
+}
