@@ -1,0 +1,21 @@
+.homeContainer {
+  margin-left: 100px;
+  background: #252627;
+  display: flex;
+}
+.htmlContainer {
+  margin-top: 125px;
+  padding-left: 12px;
+}
+.homeHtmlSpan {
+  color: #42474b;
+  display: grid;
+  opacity: 1.5;
+  font-family: "Shadows Into Light", cursive !important;
+  cursor: default;
+  user-select: none;
+  margin-top: 2px;
+}
+.homeBodySpan {
+  padding-left: 15px;
+}
