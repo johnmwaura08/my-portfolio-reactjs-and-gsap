@@ -10,17 +10,16 @@ function Home() {
   let gifRef = useRef(null);
   let sectionRef = useRef(null);
   let homeRef = useRef(null);
-  let typingRef = useRef(null);
-
+  
 
   useEffect(() => {
-	const tl = new TimelineMax();
-	const ptl = new TimelineMax();
-	const ltl = new TimelineMax();
+    const tl = new TimelineMax();
+    const ptl = new TimelineMax();
+  
 
-	ptl.from(homeRef, 1, { opacity: 0 }, "+=1");
-	tl.from(gifRef, 1, { opacity: 0 }, "+=2");
-	ltl.from(typingRef, 1, { opacity: 0 }, "+=1");
+    ptl.from(homeRef, 1, { opacity: 0 }, "+=1");
+    tl.from(gifRef, 1, { opacity: 0 }, "+=2");
+   
 
     onWindowResize();
     window.addEventListener("resize", onWindowResize);
@@ -29,12 +28,12 @@ function Home() {
   }, []);
 
   const onWindowResize = () => {
-	let gifHeight;
+    let gifHeight;
     let gifLeft;
     let ease = Power1.easeOut;
     let gifStyle;
-	const innerWidth = window.innerWidth;
-	
+    const innerWidth = window.innerWidth;
+
     if (innerWidth >= 1290) {
       gifHeight = 500;
       gifLeft = "55%";
@@ -96,8 +95,7 @@ function Home() {
       ease,
     };
     TweenMax.to(sectionRef, 0.3, sectionStyle);
-  }
-
+  };
 
   const enterButton = () => {
     TweenMax.to(buttonRef, 0.3, {
@@ -129,7 +127,7 @@ function Home() {
             I'm a Full-Stack Developer
           </h1>
         ) : (
-          <div ref={(el) => (typingRef = el)}>
+          <div >
             <Typical
               className={styles.typeWriter}
               steps={[
