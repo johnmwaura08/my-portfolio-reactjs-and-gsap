@@ -28,6 +28,7 @@ padding: 15px;
   justify-content: center;
   position: relative;
   user-select: none;
+  margin: 15px;
 }
 
 .navContainer p {
@@ -39,7 +40,7 @@ padding: 15px;
 
 }
 
- @media only screen and (max-width: 600px){
+ @media only screen and (max-width: 1000px){
 	 .container {
 		 position: absolute;
 		 flex-direction: row;
@@ -51,7 +52,14 @@ padding: 15px;
 		 position: absolute;
 		 flex-direction: row;
 		 height: 40px;
-		 width: 100%;
-	 }
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+   }
+   .navContainer i {
+    margin: 1px;
+     color: #00ffff;
+     margin-bottom: 5px;
+   }
  }
  
