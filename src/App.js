@@ -5,7 +5,6 @@ import Home from "../src/components/home/Home";
 import About from "../src/components/about/About";
 import Skills from "../src/components/skills/Skills";
 import Projects from "../src/components/projects/Projects";
-// import Carousel from "../src/components/skills/Carousel";
 import Contact from "../src/components/contact/Contact";
 import Carousel from "./components/carousel/Carousel";
 import "./App.css";
