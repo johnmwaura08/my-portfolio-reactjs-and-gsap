@@ -7,6 +7,7 @@ import Skills from "../src/components/skills/Skills";
 import Projects from "../src/components/projects/Projects";
 // import Carousel from "../src/components/skills/Carousel";
 import Contact from "../src/components/contact/Contact";
+import Carousel from "./components/carousel/Carousel";
 import "./App.css";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path="/skills" component={Skills} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
-          {/* <Route path="/images" component={Carousel} /> */}
+          <Route path="/images" component={Carousel} />
         </Switch>
       </Router>
     </main>
