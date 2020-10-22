@@ -34,8 +34,8 @@
 .navContainer p {
   position: absolute;
   top: 16px;
+  font-family: "Poppins", sans-serif !important;
   opacity: 0;
-  font-family: "Shadows Into Light", cursive !important;
   font-size: 16px;
 }
 
