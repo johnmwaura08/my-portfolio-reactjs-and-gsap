@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import { TimelineMax, Power1, TweenMax, Circ, Elastic, Back, Sine } from "gsap";
 import styles from "./About.module.css";
 
-
 function About() {
   const history = useHistory();
   let aboutRef = useRef(null);
@@ -11,7 +10,6 @@ function About() {
   let buttonRef = useRef(null);
 
   useEffect(() => {
-
     onWindowResize(true);
     window.addEventListener("resize", onWindowResize);
     return () => window.removeEventListener("resize", onWindowResize);
@@ -96,23 +94,23 @@ function About() {
     ctl.to(paragraphRef, time, pStyle);
   };
 
-   const enterButton = () => {
-     TweenMax.to(buttonRef, 0.3, {
-       backgroundColor: "#00ffff",
-       color: "black",
-     });
-   };
+  const enterButton = () => {
+    TweenMax.to(buttonRef, 0.3, {
+      backgroundColor: "#00ffff",
+      color: "black",
+    });
+  };
 
-   const leaveButton = () => {
-     TweenMax.to(buttonRef, 0.3, {
-       backgroundColor: "transparent",
-       color: "#00ffff",
-     });
-   };
-  
-     const handleMenuItemClick = (pageURL) => {
-       history.push(pageURL);
-     };
+  const leaveButton = () => {
+    TweenMax.to(buttonRef, 0.3, {
+      backgroundColor: "transparent",
+      color: "#00ffff",
+    });
+  };
+
+  const handleMenuItemClick = (pageURL) => {
+    history.push(pageURL);
+  };
 
   return (
     <main className={styles.aboutContainer}>
