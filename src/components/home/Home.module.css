@@ -52,6 +52,7 @@
   font-family: "Shadows Into Light", cursive !important;
   display: flex;
   margin: 10px;
+
 }
 .homeLink {
   width: 150px;
@@ -97,4 +98,7 @@ aside {
   cursor: default;
   user-select: none;
   margin-top: 2px;
+}
+.closingBodySpan {
+	padding-left: 21px;
 }
