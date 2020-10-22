@@ -1,10 +1,12 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Poppins:ital,wght@1,200&family=Shadows+Into+Light&display=swap"); */
+
 .homeContainer {
   margin-left: 100px;
   background: #252627;
   display: flex;
 }
 .htmlContainer {
-  margin-top: 125px;
+  margin-top: 75px;
   padding-left: 12px;
 }
 .homeHtmlSpan {
@@ -18,4 +20,81 @@
 }
 .homeBodySpan {
   padding-left: 15px;
+}
+.introSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+  padding-left: 100px;
+  height: 500px;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif !important;
+}
+.introSection h1 {
+  font-size: 44px;
+  font-weight: 500;
+}
+.typeWriter {
+  color: #00ffff;
+  font-size: 44px;
+  font-weight: 500;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.homeParagraph {
+  padding: 10px 0 10px 0;
+}
+.homeParagraphSpan {
+  color: #42474b;
+  opacity: 1.7;
+  font-family: "Shadows Into Light", cursive !important;
+  display: flex;
+  margin: 10px;
+}
+.homeLink {
+  width: 150px;
+  padding-left: 15px;
+}
+.homeButton {
+  margin-top: 25px;
+  width: 150px;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  background: none;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding: 8px;
+  color: #00ffff;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  position: relative;
+  z-index: 10;
+}
+.landingGif {
+  display: flex;
+  align-self: center;
+  z-index: 5;
+  height: 500px;
+  position: absolute;
+}
+aside {
+  position: absolute;
+}
+.closingHtmlContainer {
+  margin-top: 80px;
+  padding-top: 600px;
+  padding-left: 20px;
+  padding-right: 200px;
+}
+.closingHtmlSpan {
+  color: #42474b;
+  display: grid;
+  opacity: 1.5;
+  font-family: "Shadows Into Light", cursive !important;
+  cursor: default;
+  user-select: none;
+  margin-top: 2px;
 }
