@@ -7,6 +7,8 @@ import Skills from "../src/components/skills/Skills";
 import Projects from "../src/components/projects/Projects";
 import Contact from "../src/components/contact/Contact";
 import Carousel from "./components/carousel/Carousel";
+import ProjectSection from "./components/projects/ProjectSection";
+import UpdatedProjects from "./components/UpdatedProjects";
 import "./App.css";
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/skills" component={Skills} />
-          <Route path="/projects" component={Projects} />
+          <Route path="/projects" component={ProjectSection} />
           <Route path="/contact" component={Contact} />
           <Route path="/images" component={Carousel} />
         </Switch>
