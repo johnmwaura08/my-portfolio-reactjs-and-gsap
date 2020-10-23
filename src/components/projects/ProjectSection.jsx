@@ -12,20 +12,13 @@ import Typography from "@material-ui/core/Typography";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import CodeIcon from "@material-ui/icons/Code";
 import projects from "./ProjectsList";
+import styles from "./Projects.module.css"
 
 const projectsArray = projects;
 
 console.log(projectsArray);
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    justifyContent: "space-between",
-    display: "flex",
-    flexWrap: "wrap",
-    backGroundColor: "#37393b",
-    marginLeft: "150px",
-    flexDirection: "row",
-  },
   root: {
     maxWidth: 700,
     display: "grid",
@@ -112,7 +105,7 @@ export default function RecipeReviewCard() {
   return (
     <>
       {projectsArray.map((project, index) => (
-        <div className={classes.container} key={index}>
+        <div className={styles.container} key={index}>
           <Grid
             container
             spacing={1}
