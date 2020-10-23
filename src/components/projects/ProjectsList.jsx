@@ -18,9 +18,11 @@ const projects = [
       </p>
     ),
     image: covidgif,
+    demoLink: "https://nostalgic-raman-5bdcfb.netlify.app",
+    sourceLink: "https://github.com/johnmwaura08/Covid-19-tracker-ReactJS",
   },
   {
-    name: "Wavy Kits",
+    name: "WAVY KITS",
     description: (
       <p>
         This is an e-commerce store for original kits from some of the biggest
@@ -31,9 +33,11 @@ const projects = [
       </p>
     ),
     image: shippinggif,
+    demoLink: "https://wavy-kits-reactjs.netlify.app",
+    sourceLink: "https://github.com/johnmwaura08/e-commerce-store",
   },
   {
-    name: "Github Members",
+    name: "GITHUB MEMBERS",
     description: (
       <p>
         This app utilises the Github Api. The user logs in and can search for
@@ -48,9 +52,11 @@ const projects = [
       </p>
     ),
     image: githubgif,
+    demoLink: "https://github-members-react.netlify.app",
+    sourceLink: "https://github.com/johnmwaura08/github-api-search-users",
   },
   {
-    name: "Legacy Financial Dashboard",
+    name: "LEGACY FINANCIAL DASHBOARD",
     description: (
       <p>
         I was part of a team hired to build a dashboard for a local company. We
@@ -63,7 +69,7 @@ const projects = [
     image: legacygif,
   },
   {
-    name: "Portfolio Website",
+    name: "PORTFOLIO WEBSITE",
     description: (
       <p>
         This is my portfolio website i designed to display my projects and
