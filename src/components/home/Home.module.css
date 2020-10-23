@@ -52,7 +52,6 @@
   font-family: "Shadows Into Light", cursive !important;
   display: flex;
   margin: 10px;
-
 }
 .homeLink {
   width: 150px;
@@ -100,5 +99,46 @@ aside {
   margin-top: 2px;
 }
 .closingBodySpan {
-	padding-left: 21px;
+  padding-left: 21px;
+}
+@media (max-width: 700px) {
+  .homeContainer {
+    margin-left: 10px;
+    background: #252627;
+    display: grid;
+  }
+  .introSection {
+    color: white;
+
+    font-family: "Montserrat", sans-serif !important;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
+  }
+  .htmlContainer {
+    margin-top: 72px;
+    padding-left: 2px;
+  }
+  .introSection h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  aside {
+    position: absolute;
+  }
+  .landingGif {
+    width: 50%;
+    height: auto;
+    display: none;
+  }
+  .closingHtmlContainer {
+    margin-top: 80px;
+    padding-top: 500px;
+    padding-left: 2px;
+    padding-right: 200px;
+  }
 }
