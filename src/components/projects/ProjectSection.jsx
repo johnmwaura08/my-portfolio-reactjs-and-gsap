@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
+import Grid from "@material-ui/core/Grid";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
@@ -18,10 +19,12 @@ console.log(projectsArray);
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     display: "flex",
     flexWrap: "wrap",
     backGroundColor: "#37393b",
+    marginLeft: "150px",
+    flexDirection: "row",
   },
   root: {
     maxWidth: 700,
@@ -31,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     backGround: "#37393b",
     borderRadius: "10px",
     boxShadow: "inset 0 0 10px rgba(0, 0, 0, 0.5)",
-    flexDirection: "column",
+    flexDirection: "row",
     fontFamily: "Poppins, sans-serif !important",
     color: "#37393b",
   },
@@ -110,54 +113,62 @@ export default function RecipeReviewCard() {
     <>
       {projectsArray.map((project, index) => (
         <div className={classes.container} key={index}>
-          <Card className={classes.root}>
-            <CardHeader
-              avatar={
-                <Avatar aria-label="recipe" className={classes.avatar}>
-                  {project.name}
-                </Avatar>
-              }
-              title={project.name}
-             
-            />
-            <CardMedia
-              className={classes.media}
-              image={project.image}
-              title={project.name}
-            />
-            <CardContent>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                component="p"
+          <Grid
+            container
+            spacing={1}
+            direction="column"
+            justify="flex-start"
+            alignItems="center"
+           
+          >
+            <Card className={classes.root}>
+              <CardHeader
+                avatar={
+                  <Avatar aria-label="recipe" className={classes.avatar}>
+                    {project.name}
+                  </Avatar>
+                }
+                title={project.name}
                 className={classes.font}
-              >
-                {project.description}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <div className={classes.btnContainer}>
-                {project.name === "Legacy Financial Dashboard" ? (
-                  <IconButton className={classes.legacybtn}>
-                    <CodeIcon /> Source code availabe on request
-                  </IconButton>
-                ) : (
-                  <>
-                    <IconButton className={classes.iconbtn}>
-                      <VisibilityIcon /> Demo
+              />
+              <CardMedia
+                className={classes.media}
+                image={project.image}
+                title={project.name}
+              />
+              <CardContent>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.font}
+                >
+                  {project.description}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <div className={classes.btnContainer}>
+                  {project.name === "Legacy Financial Dashboard" ? (
+                    <IconButton className={classes.legacybtn}>
+                      <CodeIcon /> Source code availabe on request
                     </IconButton>
+                  ) : (
+                    <>
+                      <IconButton className={classes.iconbtn}>
+                        <VisibilityIcon /> Demo
+                      </IconButton>
 
-                    <IconButton className={classes.iconbtn}>
-                      <CodeIcon /> Source
-                    </IconButton>
-                  </>
-                )}
-              </div>
-            </CardActions>
-          </Card>
+                      <IconButton className={classes.iconbtn}>
+                        <CodeIcon /> Source
+                      </IconButton>
+                    </>
+                  )}
+                </div>
+              </CardActions>
+            </Card>
+          </Grid>
         </div>
       ))}
     </>
   );
 }
-
