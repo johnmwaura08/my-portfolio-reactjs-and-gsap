@@ -1,5 +1,28 @@
-.contactContainer{
-	justify-content: center;
-	display: flex;
-	align-items: center;
+.mainContainer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactH1Span {
+  font-size: 16px;
+  color: #42474b;
+  opacity: .7;
+  display: flex;
+  user-select: none;
+  position: relative;
+  padding: 5px 0 5px 0;
+}
+.contactFormSpan{
+ font-size: 16px;
+  color: #42474b;
+  opacity: .7;
+  display: flex;
+  user-select: none;
+  position: relative;
+  padding: 5px 0 5px 0;
+}
+.linkEmail a  {
+text-decoration: none !important;
+color:  hsl(152, 83%, 49%);
 }
