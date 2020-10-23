@@ -83,6 +83,8 @@ const projects = [
       </p>
     ),
     image: portfoliogif,
+    demoLink: "https://www.johnmwaura.dev/",
+    soureLink: "https://github.com/johnmwaura08/my-portfolio-reactjs-and-gsap",
   },
 ];
 
