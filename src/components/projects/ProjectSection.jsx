@@ -119,7 +119,6 @@ export default function RecipeReviewCard() {
             direction="column"
             justify="flex-start"
             alignItems="center"
-           
           >
             <Card className={classes.root}>
               <CardHeader
@@ -148,20 +147,28 @@ export default function RecipeReviewCard() {
               </CardContent>
               <CardActions>
                 <div className={classes.btnContainer}>
-                  {project.name === "Legacy Financial Dashboard" ? (
-                    <IconButton className={classes.legacybtn}>
-                      <CodeIcon /> Source code availabe on request
-                    </IconButton>
-                  ) : (
+                  {project.demoLink ? (
                     <>
-                      <IconButton className={classes.iconbtn}>
+                      <IconButton
+                        className={classes.iconbtn}
+                        href={project.demoLink}
+                        target="_blank"
+                      >
                         <VisibilityIcon /> Demo
                       </IconButton>
 
-                      <IconButton className={classes.iconbtn}>
+                      <IconButton
+                        className={classes.iconbtn}
+                        href={project.sourceLink}
+                        target="_blank"
+                      >
                         <CodeIcon /> Source
                       </IconButton>
                     </>
+                  ) : (
+                    <IconButton className={classes.legacybtn}>
+                      <CodeIcon /> Source code availabe on request
+                    </IconButton>
                   )}
                 </div>
               </CardActions>
