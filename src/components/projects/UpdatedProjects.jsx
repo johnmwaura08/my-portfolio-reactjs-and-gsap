@@ -76,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
       overflowY: "scroll",
       objectFit: "contain",
       paddingTop: "40px",
+      paddingBottom: "40px",
     },
     [theme.breakpoints.down("xs")]: {
       height: "100vh",
@@ -86,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
       overflowY: "scroll",
       objectFit: "contain",
       paddingTop: "40px",
+      paddingBottom: "40px",
     },
   },
   iconbtn: {
@@ -172,7 +174,7 @@ export default function RecipeReviewCard() {
           <CardActions>
             <IconButton
               className={classes.iconbtn}
-              // href={project.demoLink}
+            //   href={project.demoLink}
               target="_blank"
             >
               <VisibilityIcon /> Demo
