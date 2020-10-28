@@ -6,7 +6,8 @@ import About from "../src/components/about/About";
 import Skills from "../src/components/skills/Skills";
 import Contact from "../src/components/contact/Contact";
 import Carousel from "./components/carousel/Carousel";
-import ProjectSection from "./components/projects/ProjectSection";
+// import ProjectSection from "./components/projects/ProjectSection";
+import UpdatedProjects from "./components/projects/UpdatedProjects"
 import "./App.css";
 //added navbar folder
 
@@ -19,7 +20,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/skills" component={Skills} />
-          <Route path="/projects" component={ProjectSection} />
+          <Route path="/projects" component={UpdatedProjects} />
           <Route path="/contact" component={Contact} />
           <Route path="/images" component={Carousel} />
         </Switch>
