@@ -174,7 +174,7 @@ export default function RecipeReviewCard() {
           <CardActions>
             <IconButton
               className={classes.iconbtn}
-            //   href={project.demoLink}
+              href="https://nostalgic-raman-5bdcfb.netlify.app"
               target="_blank"
             >
               <VisibilityIcon /> Demo
@@ -182,7 +182,7 @@ export default function RecipeReviewCard() {
 
             <IconButton
               className={classes.iconbtn}
-              // href={project.sourceLink}
+              href="https://github.com/johnmwaura08/Covid-19-tracker-ReactJS"
               target="_blank"
             >
               <CodeIcon /> Source
@@ -195,7 +195,7 @@ export default function RecipeReviewCard() {
           <CardHeader
             avatar={
               <Avatar aria-label="recipe" className={classes.avatar}>
-                COVID-19 TRACKER
+                WAVY KITS
               </Avatar>
             }
             title=" WAVY KITS"
@@ -223,7 +223,7 @@ export default function RecipeReviewCard() {
           <CardActions>
             <IconButton
               className={classes.iconbtn}
-              // href={project.demoLink}
+              href="https://wavy-kits-reactjs.netlify.app"
               target="_blank"
             >
               <VisibilityIcon /> Demo
@@ -231,7 +231,7 @@ export default function RecipeReviewCard() {
 
             <IconButton
               className={classes.iconbtn}
-              // href={project.sourceLink}
+              href="https://github.com/johnmwaura08/e-commerce-store"
               target="_blank"
             >
               <CodeIcon /> Source
@@ -272,7 +272,7 @@ export default function RecipeReviewCard() {
           <CardActions>
             <IconButton
               className={classes.iconbtn}
-              // href={project.demoLink}
+              href="https://github-members-react.netlify.app"
               target="_blank"
             >
               <VisibilityIcon /> Demo
@@ -280,7 +280,7 @@ export default function RecipeReviewCard() {
 
             <IconButton
               className={classes.iconbtn}
-              // href={project.sourceLink}
+              href="https://github.com/johnmwaura08/github-api-search-users"
               target="_blank"
             >
               <CodeIcon /> Source
@@ -318,11 +318,7 @@ export default function RecipeReviewCard() {
             </Typography>
           </CardContent>
           <CardActions>
-            <IconButton
-              className={classes.legacybtn}
-              // href={project.sourceLink}
-              target="_blank"
-            >
+            <IconButton className={classes.legacybtn} target="_blank">
               <CodeIcon /> Source Code Available on Request
             </IconButton>
           </CardActions>
@@ -362,7 +358,7 @@ export default function RecipeReviewCard() {
           <CardActions>
             <IconButton
               className={classes.iconbtn}
-              // href={project.demoLink}
+              href="https://www.johnmwaura.dev/"
               target="_blank"
             >
               <VisibilityIcon /> Demo
@@ -370,7 +366,7 @@ export default function RecipeReviewCard() {
 
             <IconButton
               className={classes.iconbtn}
-              // href={project.sourceLink}
+              href="https://github.com/johnmwaura08/my-portfolio-reactjs-and-gsap"
               target="_blank"
             >
               <CodeIcon /> Source
