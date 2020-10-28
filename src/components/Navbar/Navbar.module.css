@@ -59,5 +59,9 @@
     margin: 1px;
     color: #00ffff;
     margin-bottom: 5px;
+    /* position: fixed; */
   }
+  .navContainer p {
+      display: none;
+}
 }
