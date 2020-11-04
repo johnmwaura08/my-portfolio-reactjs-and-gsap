@@ -319,7 +319,7 @@ export default function RecipeReviewCard() {
           </CardContent>
           <CardActions>
             <IconButton className={classes.legacybtn} target="_blank">
-              <CodeIcon /> Source Code Available on Request
+              <CodeIcon /> Source Code Private
             </IconButton>
           </CardActions>
         </Card>
