@@ -167,22 +167,25 @@ function About() {
           <span className={styles.aboutPSpanInner}>{"<i>"}</span>
 
           <div className={styles.iconContainer}>
-            <a href="https://github.com/johnmwaura08"
-               rel="noopener noreferrer"
-               target="_self"
-              >
+            <a
+              href="https://github.com/johnmwaura08"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://medium.com/@johnmwaura08"
-               rel="noopener noreferrer"
-              target="_self"
-              >
+            <a
+              href="https://medium.com/@johnmwaura08"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <i class="fab fa-medium"></i>
             </a>
-            <a href="https://www.linkedin.com/in/john-mwaura-a11aa0159/"
-               rel="noopener noreferrer"
-              target="_self"
-              >
+            <a
+              href="https://www.linkedin.com/in/john-mwaura-a11aa0159/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
           </div>
