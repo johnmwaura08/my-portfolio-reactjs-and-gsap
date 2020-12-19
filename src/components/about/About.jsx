@@ -182,7 +182,7 @@ function About() {
               <i class="fab fa-medium"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/john-mwaura-a11aa0159/"
+              href="https://www.linkedin.com/in/john-n-mwaura-a69732187/"
               rel="noopener noreferrer"
               target="_blank"
             >
