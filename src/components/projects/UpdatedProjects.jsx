@@ -11,15 +11,12 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import CodeIcon from "@material-ui/icons/Code";
-import projects from "./ProjectsList";
 import covidgif from "../../assets/images/covidgif.gif";
 import githubgif from "../../assets/images/githubgif.gif";
 import shippinggif from "../../assets/images/shippinggif.gif";
 import portfoliogif from "../../assets/images/portfoliogif.gif";
 import legacygif from "../../assets/images/legacygif.gif";
-// import styles from "./Projects.module.css";
 
-const projectsArray = projects;
 
 const useStyles = makeStyles((theme) => ({
   root: {
