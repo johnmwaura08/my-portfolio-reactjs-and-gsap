@@ -6,7 +6,6 @@ import About from "../src/components/about/About";
 import Skills from "../src/components/skills/Skills";
 import Contact from "../src/components/contact/Contact";
 import Carousel from "./components/carousel/Carousel";
-// import ProjectSection from "./components/projects/ProjectSection";
 import UpdatedProjects from "./components/projects/UpdatedProjects"
 import "./App.css";
 //added navbar folder
